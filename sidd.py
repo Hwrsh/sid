@@ -1,46 +1,139 @@
-print("\033[1;33;40m", end = "")
+from urllib import response
 
-print("\n𝗣𝗹𝗲𝗮𝘀𝗲 𝗘𝗻𝘁𝗲𝗿 𝗬𝗼𝘂𝗿 𝗘𝗺𝗮𝗶𝗹 :\n")
+import mechanize
 
-print("\033[1;37;40m")
+import os
 
-USERNAME = str(input())
+import datetime
 
-print("\033[1;33;40m", end = "")
+import sys
 
-print("\n𝗣𝗹𝗲𝗮𝘀𝗲 𝗘𝗻𝘁𝗲𝗿 𝗬𝗼𝘂𝗿 𝗣𝗮𝘀𝘀𝘄𝗼𝗿𝗱 :\n")
+from time import sleep
 
-print("\033[1;37;40m")
+browser = mechanize.Browser()
 
-PASSWORD = str(input())
+browser.set_handle_robots(False)
 
-print("\033[1;33;40m", end = "")
+cookies = mechanize.CookieJar()
 
-print("𝗣𝗹𝗲𝗮𝘀𝗲 𝗘𝗻𝘁𝗲𝗿 𝗧𝗵𝗲 𝗣𝗲𝗿𝘀𝗼𝗻 𝗜𝗱 :\n")
+browser.set_cookiejar(cookies)
 
-print("\033[1;37;40m")
+browser.addheaders = [('User-agent', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.76 Safari/537.36')]
 
-cid = str(input())
+browser.set_handle_refresh(False)
 
-print("\033[1;33;40m", end = "")
+url = 'https://m.facebook.com/login.php'
 
-print("𝗣𝗹𝗲𝗮𝘀𝗲 𝗘𝗻𝘁𝗲𝗿 𝗧𝗵𝗲 𝗡𝗼𝘁𝗲𝗽𝗮𝗱 𝗙𝗶𝗹𝗲 :\n")
+def openlink(msg4):
 
-print("\033[1;37;40m")
+    r = browser.open(msg4)
+    
+    sleep(msg6)
+    
+    def openlink(msg7):
+    	
+    	    r = browser.open(msg7)
 
-np = str(input())
+def aclass():
 
-print("\033[1;33;40m", end = "")
+    browser.open(url)
 
-print("𝗘𝗻𝘁𝗲𝗿 𝗧𝗵𝗲 𝗧𝗶𝗺𝗲 𝗗𝗲𝗹𝗮𝘆 𝗜𝗻 𝗦𝗲𝗰𝗼𝗻𝗱𝘀 :\n")
+    browser.select_form(nr = 0)
 
-print("\033[1;37;40m")
+    browser.form['email'] = emailx
 
-print("                𓂺")
+    browser.form['pass'] = pwx
 
-print("\033[1;33;40m", end = "")
+    r = browser.submit()
 
-print("𝗖𝗼𝗻𝗴𝗿𝗮𝘁𝘂𝗹𝗮𝘁𝗶𝗼𝗻 𝗦𝘂𝘀𝗵𝗺𝗶𝘁𝗮 𝗥𝗮𝗻𝗱𝗶 𝗢𝗿 𝗟𝗮𝗻𝗴𝗱𝗶𝗥𝗮𝘄𝗮𝘁 𝗞𝗲 𝗕𝗵𝗼𝘀𝗱𝗲 𝗠𝗲 𝗬𝗲 𝟵 𝗶𝗻𝗰𝗵 𝗞𝗮 𝗟𝗼𝘄𝗱𝗮 𝗖𝗵𝗮𝗹𝗮 𝗚𝗮𝘆𝗮 𝗝𝗼 𝗔𝗯𝗵𝗶 𝗔𝗮𝗽 𝗦𝗰𝗿𝗲𝗲𝗻 𝗣𝗮𝗿 𝗗𝗲𝗸𝗵 𝗣𝗮𝗮 𝗥𝗮𝗵𝗲 𝗛𝗲𝗶𝗻.")
+    browser.select_form(nr = 0)
 
+    msg1=str(input("➣Enter 2 step google code : "))
 
+    print(msg1)
 
+    browser.form['approvals_code'] = msg1
+
+    r=browser.submit()
+
+    browser.select_form(nr = 0)
+
+    browser.form['name_action_selected'] = ['save_device']
+
+    r = browser.submit()
+
+    
+
+    
+
+def poct(comment):
+
+    browser.select_form(nr = 0)
+
+    browser.form['comment_text'] = comment
+
+    r = browser.submit()
+
+print ("[=[ V3N0M W4NT3D RUL3X - :D ]=]")
+
+print ("[=[ H4RSH R4JPUT :D ]=]")
+
+emailx=str(input("➣Enter email : "))
+
+pwx =str(input("➣Enter pswrd : "))
+
+aclass()
+
+msg4=str(input("➣Enter post link : "))
+
+msg5=str(input("➣enter notpad file : "))
+
+msg7=str(input("➣Enter post link : "))
+
+mgs8=str(input("➣Enter notepad file 2 : "))
+
+f=open(msg5, 'r')
+
+lines = f.readlines()
+
+f.close()
+
+msg6= int(input("➣Enter TIME : "))
+
+mgs8= int(input("➣Enter TIME : "))
+
+os.system('clear')
+
+sys.stdout.flush()
+
+print('kbaad v1.0')
+
+count = 0
+
+while True:
+
+    for line in lines:
+
+        if len(line) > 3:
+
+            if count != 0:
+
+                sleep(msg6)
+
+            openlink(msg4)
+
+            poct(line)      
+       
+        if len(line) > 3:
+
+            if count != 0:
+
+                sleep(msg8)
+
+            openlink(msg7)
+
+            poct(line)
+
+            print('Comment Succefully Sent Done By Hwrsh Rajput - ', line)
+                
+                
